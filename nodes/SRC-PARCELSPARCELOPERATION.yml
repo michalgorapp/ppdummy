@@ -1,0 +1,92 @@
+fileVersion: 1
+id: 8b965bf6-c7ca-4418-b19a-31f96e0aa6a5
+name: PARCELSPARCELOPERATION
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30218082-ebe9-460c-862b-dc0c8991d287
+          stepCounter: 8b965bf6-c7ca-4418-b19a-31f96e0aa6a5
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: PARCELOPERATIONDATEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 44c3cf2b-e5a3-43b7-bc65-d216dcc84886
+          stepCounter: 8b965bf6-c7ca-4418-b19a-31f96e0aa6a5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CATEGORY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28f95f38-dafc-4da6-850a-f263d690ce2c
+          stepCounter: 8b965bf6-c7ca-4418-b19a-31f96e0aa6a5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PACKAGESIZE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b505f53-ce6d-439d-8306-87d182cf2a58
+          stepCounter: 8b965bf6-c7ca-4418-b19a-31f96e0aa6a5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PARCELOPERATIONID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: PARCELSPARCELOPERATION
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

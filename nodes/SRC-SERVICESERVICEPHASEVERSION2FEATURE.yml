@@ -1,0 +1,73 @@
+fileVersion: 1
+id: 89b13c10-22ed-49f0-8074-9f9ef9d02fdb
+name: SERVICESERVICEPHASEVERSION2FEATURE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb23922c-b1b2-4475-a27b-f6579df6c62c
+          stepCounter: 89b13c10-22ed-49f0-8074-9f9ef9d02fdb
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: OTHERPARAMETERS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9fc92cda-8f28-4e04-941d-6859dac64ad0
+          stepCounter: 89b13c10-22ed-49f0-8074-9f9ef9d02fdb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SERVICEPHASEVERSIONID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3b974b9-6b7f-4dea-b353-10a547d63d6c
+          stepCounter: 89b13c10-22ed-49f0-8074-9f9ef9d02fdb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FEATUREID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SERVICESERVICEPHASEVERSION2FEATURE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

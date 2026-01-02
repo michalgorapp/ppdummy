@@ -1,0 +1,323 @@
+fileVersion: 1
+id: 808a7856-cdf5-433c-9464-0348343c4863
+name: RCTE_AGENCY
+operation:
+  config:
+    anctablename: BASEAGENCYINSTANCE
+    joincol:
+      items:
+        - columnName:
+            columnCounter: e6b0cbd3-2fde-4635-8266-8188ba953b16
+            stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+          ctecolumnName:
+            columnCounter: bd4fa8ae-aa7d-442d-b11e-fafc28489f4e
+            stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+    mulsources: true
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: true
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f84f2655-95a6-40b2-a9e8-e245b699348e
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AGENCYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1917eff7-1577-464d-bf25-18ae500569fa
+                stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+            transform: ""
+          - columnReferences:
+              - columnCounter: 1917eff7-1577-464d-bf25-18ae500569fa
+                stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd4fa8ae-aa7d-442d-b11e-fafc28489f4e
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AGENCYINSTANCEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e4cfd9d1-035b-477b-8b24-b5b74c0c714b
+                stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+            transform: ""
+          - columnReferences:
+              - columnCounter: e4cfd9d1-035b-477b-8b24-b5b74c0c714b
+                stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2cb00ea-6b82-47b1-9bc6-8fe6f44b1e1d
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: AGENCYNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 259b7005-64b5-4c59-8399-808fcfc933e6
+                stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+            transform: ""
+          - columnReferences:
+              - columnCounter: 259b7005-64b5-4c59-8399-808fcfc933e6
+                stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7c91dad-2168-482a-a159-f989259589c8
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: AGENCYTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17a3e4ae-55d0-41a7-966d-a4d063cef566
+                stepCounter: 29174d36-d4e2-417b-bd3a-13ffdd9f1b04
+            transform: ""
+          - columnReferences:
+              - columnCounter: 17a3e4ae-55d0-41a7-966d-a4d063cef566
+                stepCounter: 29174d36-d4e2-417b-bd3a-13ffdd9f1b04
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1815c430-d370-4fda-a4b2-67982bb61291
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AGENCYTYPEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7c8d98b1-4523-40a2-8ffa-43ec0f66f9ee
+                stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+            transform: ""
+          - columnReferences:
+              - columnCounter: 4d8d2d58-64f5-49cd-8c92-3da4dcc0ad1f
+                stepCounter: 29174d36-d4e2-417b-bd3a-13ffdd9f1b04
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6b0cbd3-2fde-4635-8266-8188ba953b16
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PARENTAGENCYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de481914-3afb-46d1-b466-7213b0bc7fdd
+                stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+            transform: ""
+          - columnReferences:
+              - columnCounter: de481914-3afb-46d1-b466-7213b0bc7fdd
+                stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: afa44b98-4355-4e5e-a0d2-6b16c1acd4b2
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TOPNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 259b7005-64b5-4c59-8399-808fcfc933e6
+                stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+            transform: ""
+          - columnReferences: []
+            transform: "\"RCTE_CTE_CLAUSE\".\"TOPNAME\""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c1161bbd-553d-451b-aa8d-c097507cc5b4
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TOPPNI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d262f07e-4b84-42e7-824c-5697e587aa69
+                stepCounter: 9ef5a7a4-f928-426b-846e-527f9c58ec05
+            transform: ""
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 21b1c87a-63af-4bd6-b8da-480a84e01f4f
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TOPTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17a3e4ae-55d0-41a7-966d-a4d063cef566
+                stepCounter: 29174d36-d4e2-417b-bd3a-13ffdd9f1b04
+            transform: ""
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3fb6dd6-a470-4732-b2be-37633f058b57
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: UPNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: IFF("BASEAGENCYINSTANCE"."AGENCYTYPEID" = "V_BASEAGENCYTYPE"."AGENCYTYPEID", "BASEAGENCYINSTANCE"."AGENCYNAME", NULL)
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58ae0abb-9afe-4a57-b42e-8f20e5411f5f
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: UPPNI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: IFF("BASEAGENCYINSTANCE"."AGENCYTYPEID" = "V_BASEAGENCYTYPE"."AGENCYTYPEID", "BASEAGENCY"."PNI", NULL)
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          BASEAGENCY: 9ef5a7a4-f928-426b-846e-527f9c58ec05
+          BASEAGENCYINSTANCE: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+          BASEAGENCYTYPE: 29174d36-d4e2-417b-bd3a-13ffdd9f1b04
+          V_BASEAGENCYTYPE: 0d9a2066-0313-478c-9093-4763e5892ac8
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: BASEAGENCY
+          - locationName: SRC
+            nodeName: BASEAGENCYINSTANCE
+          - locationName: SRC
+            nodeName: BASEAGENCYTYPE
+          - locationName: SRC
+            nodeName: V_BASEAGENCYTYPE
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'BASEAGENCYINSTANCE') }} "BASEAGENCYINSTANCE"
+            INNER JOIN {{ ref('SRC', 'BASEAGENCY') }} "BASEAGENCY"
+            ON "BASEAGENCYINSTANCE"."AGENCYID" = "BASEAGENCY"."AGENCYID"
+            INNER JOIN {{ ref('SRC', 'BASEAGENCYTYPE') }} "BASEAGENCYTYPE"
+            ON "BASEAGENCYINSTANCE"."AGENCYTYPEID" = "BASEAGENCYTYPE"."AGENCYTYPEID"
+            CROSS JOIN {{ ref('SRC', 'V_BASEAGENCYTYPE') }} "V_BASEAGENCYTYPE"
+            WHERE "BASEAGENCY"."PNI" IN ('201700','201979','202515','203016') 
+                AND "BASEAGENCYINSTANCE"."STARTUPDATE" <= '2025-02-17'
+                AND "BASEAGENCYINSTANCE"."ENDDATE" >= '2025-02-17'
+        name: RCTE_ANCHOR
+        noLinkRefs: []
+      - aliases:
+          BASEAGENCY: 9ef5a7a4-f928-426b-846e-527f9c58ec05
+          BASEAGENCYINSTANCE: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+          BASEAGENCYTYPE: 29174d36-d4e2-417b-bd3a-13ffdd9f1b04
+          V_BASEAGENCYTYPE: 0d9a2066-0313-478c-9093-4763e5892ac8
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: BASEAGENCY
+          - locationName: SRC
+            nodeName: BASEAGENCYINSTANCE
+          - locationName: SRC
+            nodeName: BASEAGENCYTYPE
+          - locationName: SRC
+            nodeName: V_BASEAGENCYTYPE
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'BASEAGENCYINSTANCE') }} "BASEAGENCYINSTANCE"
+            INNER JOIN {{ ref('SRC', 'BASEAGENCY') }} "BASEAGENCY"
+            ON "BASEAGENCYINSTANCE"."AGENCYID" = "BASEAGENCY"."AGENCYID"
+            INNER JOIN {{ ref('SRC', 'BASEAGENCYTYPE') }} "BASEAGENCYTYPE"
+            ON "BASEAGENCYINSTANCE"."AGENCYTYPEID" = "BASEAGENCYTYPE"."AGENCYTYPEID"
+            CROSS JOIN {{ ref('SRC', 'V_BASEAGENCYTYPE') }} "V_BASEAGENCYTYPE"
+            WHERE "BASEAGENCYINSTANCE"."STARTUPDATE" <= '2025-02-17'
+                AND "BASEAGENCYINSTANCE"."ENDDATE" >= '2025-02-17'
+        name: RCTE_RECURSIVE
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: RCTE_CTE_CLAUSE
+        noLinkRefs: []
+  name: RCTE_AGENCY
+  overrideSQL: false
+  schema: ""
+  sqlType: FNT:::586
+  type: sql
+  version: 1
+type: Node

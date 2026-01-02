@@ -1,0 +1,111 @@
+fileVersion: 1
+id: 4499f4ef-e81c-44a5-a6a5-53d60c4ee694
+name: COMMONOPERATION2SERVICE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2830e5c-ce56-47bd-900e-52f14bb41775
+          stepCounter: 4499f4ef-e81c-44a5-a6a5-53d60c4ee694
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: OPERATION2SERVICEDATEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f10a7e5-f648-44f8-b0a1-611eb20d6176
+          stepCounter: 4499f4ef-e81c-44a5-a6a5-53d60c4ee694
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FEESIGN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b1a72bc-d7da-4be1-abb1-7e6eaeed9803
+          stepCounter: 4499f4ef-e81c-44a5-a6a5-53d60c4ee694
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OPERATIONID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 124bb4e1-8ed6-45c6-8e44-ded92b37fbe4
+          stepCounter: 4499f4ef-e81c-44a5-a6a5-53d60c4ee694
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SERVICEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dac28cbd-0b72-4e80-8593-9b83b840ec11
+          stepCounter: 4499f4ef-e81c-44a5-a6a5-53d60c4ee694
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FEE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: COMMONOPERATION2SERVICE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,111 @@
+fileVersion: 1
+id: 3df4e0ad-f8c1-4b7d-92c6-672105c9a983
+name: COMMONOPERATIONAMOUNTITEM
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48e3f3ea-9bdc-4b9c-b0cd-e07dfae5da10
+          stepCounter: 3df4e0ad-f8c1-4b7d-92c6-672105c9a983
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: OPERATIONAMOUNTITEMDATEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ccb8f203-a718-49a6-8eb6-f9e6be6bca30
+          stepCounter: 3df4e0ad-f8c1-4b7d-92c6-672105c9a983
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AMOUNTITEMTYPEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e27647a-0a14-4ba9-83c6-dd9a794604fa
+          stepCounter: 3df4e0ad-f8c1-4b7d-92c6-672105c9a983
+        config: {}
+        dataType: NUMBER(38,1)
+        defaultValue: ""
+        description: ""
+        name: VALUE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c55643b5-ce17-4a51-85e3-4a027f2c4fc4
+          stepCounter: 3df4e0ad-f8c1-4b7d-92c6-672105c9a983
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SIGN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28e0acc4-71c3-434c-9fe6-7a8f62966c6a
+          stepCounter: 3df4e0ad-f8c1-4b7d-92c6-672105c9a983
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OPERATIONID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: COMMONOPERATIONAMOUNTITEM
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

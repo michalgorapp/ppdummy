@@ -1,0 +1,111 @@
+fileVersion: 1
+id: 3ed8c50f-4ca3-4cd7-9e1b-e9e65c0d8226
+name: SECURITYUSER
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff709838-f098-4ee3-906f-db123fa5a476
+          stepCounter: 3ed8c50f-4ca3-4cd7-9e1b-e9e65c0d8226
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: USERID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5720c3bf-3085-4161-9554-ffe234cbec00
+          stepCounter: 3ed8c50f-4ca3-4cd7-9e1b-e9e65c0d8226
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: EMPLOYEENUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51344ecf-29bd-4650-9b20-0996ee12bafe
+          stepCounter: 3ed8c50f-4ca3-4cd7-9e1b-e9e65c0d8226
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: FIRSTNAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51985a6f-75a5-49c0-8278-851e423054eb
+          stepCounter: 3ed8c50f-4ca3-4cd7-9e1b-e9e65c0d8226
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LASTNAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3cf70ebd-ddf9-4233-8822-727997b0e38e
+          stepCounter: 3ed8c50f-4ca3-4cd7-9e1b-e9e65c0d8226
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: USERNAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SECURITYUSER
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

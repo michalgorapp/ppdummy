@@ -1,0 +1,263 @@
+fileVersion: 1
+id: 16eee978-7db0-4b07-a01f-165f3ebf6801
+name: COMMONOPERATION
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7b3257e-286a-4ed5-803e-9c8d3f1f819e
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: AGENCYDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 482c77d0-4e05-4b21-98a3-f5bc1ca001a3
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 470a5459-b53a-4acf-91ec-9a10b3af5108
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FEE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: afba810d-2c8f-43b8-a480-4ad1f34adb2e
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: OPERATIONSTATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa6ae676-86ef-4414-8a0c-53e6c816316e
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FEESIGN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f25696f-6ea4-46d6-b9d6-ee07bcce1d7e
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AMOUNTSIGN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b69fbf8-5c12-4895-937f-d20d6de010d1
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SERVICEPHASEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b7486d3-76ef-47d7-9bcb-ea54d0e0e007
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OPERATIONID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 207a5cec-4f99-487f-a9e3-53ac0f05128a
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AGENCYINSTANCEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93e692bd-7037-453e-81b9-5f10ad4191c5
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: USERID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac7b09a1-d0c6-4fad-93f5-06d651017487
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OPERATIONTYPEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd2c2c8a-2ab9-4190-8663-1154f0a359b2
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SERVICEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7de018e1-081b-4dba-b0b2-b172e19ae5ed
+          stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PAYMENTMETHODID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: COMMONOPERATION
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

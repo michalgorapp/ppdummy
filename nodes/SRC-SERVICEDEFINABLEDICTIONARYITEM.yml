@@ -1,0 +1,73 @@
+fileVersion: 1
+id: 63233552-7872-48d6-b043-f4cc62c22f61
+name: SERVICEDEFINABLEDICTIONARYITEM
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f1c85d2-ad09-4c38-b2a4-a2cb9a95d7db
+          stepCounter: 63233552-7872-48d6-b043-f4cc62c22f61
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DEFINABLEDICTIONARYITEMID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 47343f4f-60dc-4458-adc5-c99927cc88ed
+          stepCounter: 63233552-7872-48d6-b043-f4cc62c22f61
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PARENTDEFINABLEDICTIONARYITEMID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 516351ac-4b20-4edd-96c8-7f0cd7802d2e
+          stepCounter: 63233552-7872-48d6-b043-f4cc62c22f61
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SERVICEDEFINABLEDICTIONARYITEM
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

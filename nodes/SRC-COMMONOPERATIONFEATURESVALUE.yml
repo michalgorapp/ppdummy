@@ -1,0 +1,73 @@
+fileVersion: 1
+id: f6162240-4ef1-4df9-9de1-92ab27664ab4
+name: COMMONOPERATIONFEATURESVALUE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a499978a-bb3f-4a88-809a-fb4031dd495f
+          stepCounter: f6162240-4ef1-4df9-9de1-92ab27664ab4
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: OPERATIONFEATURESVALUEDATEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5fa217ba-3ca4-4f9e-944f-862eabfc3cd7
+          stepCounter: f6162240-4ef1-4df9-9de1-92ab27664ab4
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OPERATIONFEATURESVALUEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b51938d-a071-4a20-899f-3e41ce34080a
+          stepCounter: f6162240-4ef1-4df9-9de1-92ab27664ab4
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: VALUE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: COMMONOPERATIONFEATURESVALUE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

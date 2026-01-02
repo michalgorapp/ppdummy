@@ -1,0 +1,149 @@
+fileVersion: 1
+id: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+name: BASEAGENCYINSTANCE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e392f301-64df-4445-b163-4c990bfb7f89
+          stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: STARTUPDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f112db43-89da-4ff0-be1c-2e1376c7760f
+          stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: ENDDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 259b7005-64b5-4c59-8399-808fcfc933e6
+          stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: AGENCYNAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c8d98b1-4523-40a2-8ffa-43ec0f66f9ee
+          stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AGENCYTYPEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4cfd9d1-035b-477b-8b24-b5b74c0c714b
+          stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AGENCYINSTANCEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1917eff7-1577-464d-bf25-18ae500569fa
+          stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AGENCYID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: de481914-3afb-46d1-b466-7213b0bc7fdd
+          stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PARENTAGENCYID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: BASEAGENCYINSTANCE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

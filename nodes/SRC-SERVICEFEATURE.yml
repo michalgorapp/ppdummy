@@ -1,0 +1,54 @@
+fileVersion: 1
+id: b59ab776-fdc9-4ae8-8538-b60b0206d581
+name: SERVICEFEATURE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a7bdd10-6154-477f-b63f-d6ad4ff25325
+          stepCounter: b59ab776-fdc9-4ae8-8538-b60b0206d581
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FEATUREID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd577ffe-9fa1-4b84-981d-7ce488f60fd8
+          stepCounter: b59ab776-fdc9-4ae8-8538-b60b0206d581
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SERVICEFEATURE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

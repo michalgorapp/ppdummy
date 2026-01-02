@@ -1,0 +1,54 @@
+fileVersion: 1
+id: 07be4deb-508c-407a-8820-a15d8cc16e5e
+name: SERVICESERVICE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 428eb55d-37a3-4dcc-9438-0c1ff7489079
+          stepCounter: 07be4deb-508c-407a-8820-a15d8cc16e5e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SERVICEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d06473a6-15e5-4549-9077-9a9289b4b173
+          stepCounter: 07be4deb-508c-407a-8820-a15d8cc16e5e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SERVICESERVICE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,54 @@
+fileVersion: 1
+id: 391e2346-098c-4c9a-93b2-cfe4f416bb06
+name: DICTIONARYPAYMENTMETHOD
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00df975b-009d-49cd-ac11-06b53728701e
+          stepCounter: 391e2346-098c-4c9a-93b2-cfe4f416bb06
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PAYMENTMETHODID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 617ac5ff-82c1-42c1-87c6-26d9dee8d50c
+          stepCounter: 391e2346-098c-4c9a-93b2-cfe4f416bb06
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DICTIONARYPAYMENTMETHOD
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

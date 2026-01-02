@@ -1,0 +1,60 @@
+fileVersion: 1
+id: 0d9a2066-0313-478c-9093-4763e5892ac8
+name: V_BASEAGENCYTYPE
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f790635-b8b4-4c31-b3ec-59c3e9539148
+          stepCounter: 0d9a2066-0313-478c-9093-4763e5892ac8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AGENCYTYPEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4d8d2d58-64f5-49cd-8c92-3da4dcc0ad1f
+                stepCounter: 29174d36-d4e2-417b-bd3a-13ffdd9f1b04
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          BASEAGENCYTYPE: 29174d36-d4e2-417b-bd3a-13ffdd9f1b04
+        customSQL:
+          customSQL: |-
+            {{ stage('Override Create SQL') }}
+            	CREATE OR REPLACE VIEW {{ ref('SRC', 'V_BASEAGENCYTYPE')}} AS (
+            		SELECT 
+             "AGENCYTYPEID" AS "AGENCYTYPEID",
+             "SYMBOL" AS "SYMBOL"
+             FROM {{ ref('SRC', 'BASEAGENCYTYPE') }}
+            	)
+        dependencies:
+          - locationName: SRC
+            nodeName: BASEAGENCYTYPE
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'BASEAGENCYTYPE') }} "BASEAGENCYTYPE"
+            WHERE "SYMBOL" = 'm'
+        name: V_BASEAGENCYTYPE
+        noLinkRefs: []
+  name: V_BASEAGENCYTYPE
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

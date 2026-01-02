@@ -1,0 +1,92 @@
+fileVersion: 1
+id: 5032ba58-3bfa-43fe-be0b-7d510d826f1e
+name: DICTIONARYAMOUNTITEMTYPE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3155a2a-2f45-4e19-9f3b-2465d21be02a
+          stepCounter: 5032ba58-3bfa-43fe-be0b-7d510d826f1e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AMOUNTITEMTYPEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2bccdd9-7978-461f-8d80-f23d825f3dc8
+          stepCounter: 5032ba58-3bfa-43fe-be0b-7d510d826f1e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ITEMKIND
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2b17d4f-3a63-4838-a18f-ea53d9924fc7
+          stepCounter: 5032ba58-3bfa-43fe-be0b-7d510d826f1e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: DISPLAYNAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6236546c-b5f2-4363-ab38-d60140a537bb
+          stepCounter: 5032ba58-3bfa-43fe-be0b-7d510d826f1e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DISPLAYORDER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DICTIONARYAMOUNTITEMTYPE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
