@@ -1,0 +1,108 @@
+fileVersion: 1
+id: 813a9c03-6493-49db-aaaa-5d8dbf467143
+name: POMOCNICZE
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6703a792-cb97-49f4-9351-ade73ad4752a
+          stepCounter: 813a9c03-6493-49db-aaaa-5d8dbf467143
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FEATUREID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f3b974b9-6b7f-4dea-b353-10a547d63d6c
+                stepCounter: 89b13c10-22ed-49f0-8074-9f9ef9d02fdb
+            transform: "\"vf\".\"FEATUREID\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05335f2b-b798-49f9-8537-1443b54a151e
+          stepCounter: 813a9c03-6493-49db-aaaa-5d8dbf467143
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd577ffe-9fa1-4b84-981d-7ce488f60fd8
+                stepCounter: b59ab776-fdc9-4ae8-8538-b60b0206d581
+            transform: "\"f\".\"NAME\""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f4cd185-e744-47e0-97d9-6641318a418b
+          stepCounter: 813a9c03-6493-49db-aaaa-5d8dbf467143
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'INV' || \"vf\".\"FEATUREID\" || 'POM'"
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          f: b59ab776-fdc9-4ae8-8538-b60b0206d581
+          s: 07be4deb-508c-407a-8820-a15d8cc16e5e
+          sp: 6caa12dc-9b22-41b8-9f78-f9b20a296180
+          v: 3f6c38e9-10ae-44b6-90ae-ac7aba14daca
+          vf: 89b13c10-22ed-49f0-8074-9f9ef9d02fdb
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: SERVICEFEATURE
+          - locationName: SRC
+            nodeName: SERVICESERVICE
+          - locationName: SRC
+            nodeName: SERVICESERVICE2SERVICEPHASE
+          - locationName: SRC
+            nodeName: SERVICESERVICEPHASEVERSION
+          - locationName: SRC
+            nodeName: SERVICESERVICEPHASEVERSION2FEATURE
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'SERVICESERVICE') }} "s"
+            INNER JOIN {{ ref('SRC', 'SERVICESERVICE2SERVICEPHASE') }} "sp"
+            ON "sp"."SERVICEID" = "s"."SERVICEID"
+            INNER JOIN {{ ref('SRC', 'SERVICESERVICEPHASEVERSION') }} "v"
+            ON "v"."SERVICE2SERVICEPHASEID" = "sp"."SERVICE2SERVICEPHASEID"
+            INNER JOIN {{ ref('SRC', 'SERVICESERVICEPHASEVERSION2FEATURE') }} "vf"
+            ON "vf"."SERVICEPHASEVERSIONID" = "vf"."SERVICEPHASEVERSIONID"
+            INNER JOIN {{ ref('SRC', 'SERVICEFEATURE') }} "f"
+            ON "f"."FEATUREID" = "vf"."FEATUREID"
+            WHERE "s"."OPERATIONTYPEID" IN (38, 39, 85, 100, 102, 118) AND "vf"."OTHERPARAMETERS" LIKE 'Phase-0%' 
+            ORDER BY 1;
+        name: POMOCNICZE
+        noLinkRefs: []
+  name: POMOCNICZE
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
