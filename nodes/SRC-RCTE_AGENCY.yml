@@ -13,14 +13,14 @@ operation:
             columnCounter: bd4fa8ae-aa7d-442d-b11e-fafc28489f4e
             stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
     mulsources: true
-    testsEnabled: true
+    testsEnabled: false
     truncateBefore: true
   database: ""
-  deployEnabled: true
+  deployEnabled: false
   description: ""
   isMultisource: true
   locationName: SRC
-  materializationType: table
+  materializationType: view
   metadata:
     appliedNodeTests: []
     columns:
@@ -159,25 +159,7 @@ operation:
                 stepCounter: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
             transform: ""
           - columnReferences: []
-            transform: "\"RCTE_CTE_CLAUSE\".\"TOPNAME\""
-          - columnReferences: []
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: c1161bbd-553d-451b-aa8d-c097507cc5b4
-          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TOPPNI
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: d262f07e-4b84-42e7-824c-5697e587aa69
-                stepCounter: 9ef5a7a4-f928-426b-846e-527f9c58ec05
-            transform: ""
-          - columnReferences: []
-            transform: ""
+            transform: "\"RCTE_CTE\".\"TOPNAME\""
           - columnReferences: []
             transform: ""
       - appliedColumnTests: {}
@@ -195,7 +177,25 @@ operation:
                 stepCounter: 29174d36-d4e2-417b-bd3a-13ffdd9f1b04
             transform: ""
           - columnReferences: []
+            transform: "\"RCTE_CTE\".\"TOPTYPE\""
+          - columnReferences: []
             transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c1161bbd-553d-451b-aa8d-c097507cc5b4
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TOPPNI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d262f07e-4b84-42e7-824c-5697e587aa69
+                stepCounter: 9ef5a7a4-f928-426b-846e-527f9c58ec05
+            transform: ""
+          - columnReferences: []
+            transform: "\"RCTE_CTE\".\"TOPPNI\""
           - columnReferences: []
             transform: ""
       - acceptedValues:
@@ -218,7 +218,7 @@ operation:
                 stepCounter: "0"
             transform: IFF("BASEAGENCYINSTANCE"."AGENCYTYPEID" = "V_BASEAGENCYTYPE"."AGENCYTYPEID", "BASEAGENCYINSTANCE"."AGENCYNAME", NULL)
           - columnReferences: []
-            transform: ""
+            transform: IFF("BASEAGENCYINSTANCE"."AGENCYTYPEID" = "V_BASEAGENCYTYPE"."AGENCYTYPEID", "BASEAGENCYINSTANCE"."AGENCYNAME", "RCTE_CTE"."UPNAME")
           - columnReferences: []
             transform: ""
         systemColumnType: None
@@ -242,6 +242,32 @@ operation:
                 stepCounter: "0"
             transform: IFF("BASEAGENCYINSTANCE"."AGENCYTYPEID" = "V_BASEAGENCYTYPE"."AGENCYTYPEID", "BASEAGENCY"."PNI", NULL)
           - columnReferences: []
+            transform: IFF("BASEAGENCYINSTANCE"."AGENCYTYPEID" = "V_BASEAGENCYTYPE"."AGENCYTYPEID", "BASEAGENCY"."PNI", "RCTE_CTE"."UPPNI")
+          - columnReferences: []
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: caec8b6d-8ef6-440b-b3ed-4c6099c21b36
+          stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AGENCYPNI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d262f07e-4b84-42e7-824c-5697e587aa69
+                stepCounter: 9ef5a7a4-f928-426b-846e-527f9c58ec05
+            transform: ""
+          - columnReferences:
+              - columnCounter: d262f07e-4b84-42e7-824c-5697e587aa69
+                stepCounter: 9ef5a7a4-f928-426b-846e-527f9c58ec05
             transform: ""
           - columnReferences: []
             transform: ""
@@ -267,43 +293,23 @@ operation:
             nodeName: V_BASEAGENCYTYPE
         join:
           joinCondition: |-
-            FROM {{ ref('SRC', 'BASEAGENCYINSTANCE') }} "BASEAGENCYINSTANCE"
-            INNER JOIN {{ ref('SRC', 'BASEAGENCY') }} "BASEAGENCY"
+            FROM {{ ref('SRC', 'BASEAGENCY') }} AS "BASEAGENCY"
+            INNER JOIN {{ ref('SRC', 'BASEAGENCYINSTANCE') }} AS "BASEAGENCYINSTANCE"
             ON "BASEAGENCYINSTANCE"."AGENCYID" = "BASEAGENCY"."AGENCYID"
-            INNER JOIN {{ ref('SRC', 'BASEAGENCYTYPE') }} "BASEAGENCYTYPE"
-            ON "BASEAGENCYINSTANCE"."AGENCYTYPEID" = "BASEAGENCYTYPE"."AGENCYTYPEID"
-            CROSS JOIN {{ ref('SRC', 'V_BASEAGENCYTYPE') }} "V_BASEAGENCYTYPE"
-            WHERE "BASEAGENCY"."PNI" IN ('201700','201979','202515','203016') 
                 AND "BASEAGENCYINSTANCE"."STARTUPDATE" <= '2025-02-17'
                 AND "BASEAGENCYINSTANCE"."ENDDATE" >= '2025-02-17'
+            INNER JOIN {{ ref('SRC', 'BASEAGENCYTYPE') }} AS "BASEAGENCYTYPE"
+            ON "BASEAGENCYINSTANCE"."AGENCYTYPEID" = "BASEAGENCYTYPE"."AGENCYTYPEID"
+            CROSS JOIN {{ ref('SRC', 'V_BASEAGENCYTYPE') }} AS "V_BASEAGENCYTYPE"
+            WHERE "BASEAGENCY"."PNI" IN ('201700','201979','202515','203016')
         name: RCTE_ANCHOR
         noLinkRefs: []
-      - aliases:
-          BASEAGENCY: 9ef5a7a4-f928-426b-846e-527f9c58ec05
-          BASEAGENCYINSTANCE: 8872cb27-f670-41f6-b2ce-0d2c28978e6e
-          BASEAGENCYTYPE: 29174d36-d4e2-417b-bd3a-13ffdd9f1b04
-          V_BASEAGENCYTYPE: 0d9a2066-0313-478c-9093-4763e5892ac8
+      - aliases: {}
         customSQL:
           customSQL: ""
-        dependencies:
-          - locationName: SRC
-            nodeName: BASEAGENCY
-          - locationName: SRC
-            nodeName: BASEAGENCYINSTANCE
-          - locationName: SRC
-            nodeName: BASEAGENCYTYPE
-          - locationName: SRC
-            nodeName: V_BASEAGENCYTYPE
+        dependencies: []
         join:
-          joinCondition: |-
-            FROM {{ ref('SRC', 'BASEAGENCYINSTANCE') }} "BASEAGENCYINSTANCE"
-            INNER JOIN {{ ref('SRC', 'BASEAGENCY') }} "BASEAGENCY"
-            ON "BASEAGENCYINSTANCE"."AGENCYID" = "BASEAGENCY"."AGENCYID"
-            INNER JOIN {{ ref('SRC', 'BASEAGENCYTYPE') }} "BASEAGENCYTYPE"
-            ON "BASEAGENCYINSTANCE"."AGENCYTYPEID" = "BASEAGENCYTYPE"."AGENCYTYPEID"
-            CROSS JOIN {{ ref('SRC', 'V_BASEAGENCYTYPE') }} "V_BASEAGENCYTYPE"
-            WHERE "BASEAGENCYINSTANCE"."STARTUPDATE" <= '2025-02-17'
-                AND "BASEAGENCYINSTANCE"."ENDDATE" >= '2025-02-17'
+          joinCondition: ""
         name: RCTE_RECURSIVE
         noLinkRefs: []
       - aliases: {}
@@ -312,7 +318,7 @@ operation:
         dependencies: []
         join:
           joinCondition: ""
-        name: RCTE_CTE_CLAUSE
+        name: RCTE_CTE
         noLinkRefs: []
   name: RCTE_AGENCY
   overrideSQL: false

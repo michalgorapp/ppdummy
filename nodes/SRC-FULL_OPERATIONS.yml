@@ -1,0 +1,264 @@
+fileVersion: 1
+id: 16fd0524-3c5b-4202-9241-e344e06157d2
+name: FULL_OPERATIONS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 525e420b-5ffd-4eb3-bf21-21214975c14c
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: DATE
+        description: ""
+        name: AGENCYDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c6615a0f-0ef3-4934-b0b9-2f39e6244ea4
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"AGENCYDATE\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c61c27b8-7df7-4dda-965a-1eb2f7e973fc
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: OPERATIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4239ee5c-e2ff-409a-966e-3615a523ce14
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"OPERATIONID\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7506fe64-2a74-4ce2-9e77-17e8b24f9bb3
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: OPERATIONTYPEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b371dcba-56da-4fb0-81ee-dfe24b63d9fd
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"OPERATIONTYPEID\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3b4c584-3c16-4791-bca1-0cae7d8af0f5
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SERVICEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a082133c-1ad8-4985-a5d3-df6bb42ea952
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"SERVICEID\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ab6af19f-fc37-4e45-a414-ae94c71dcb16
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SERVICEPHASEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 214b3b7a-466f-42f6-a21f-749c28a2aae9
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"SERVICEPHASEID\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95cfc7d7-6a61-4a42-a277-db022e58c91f
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PAYMENTMETHODID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 554aed67-3c93-49dc-b06b-02c1a0396948
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"PAYMENTMETHODID\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a89fef0d-7acc-43ae-8a04-30b98697c2e8
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AGENCYINSTANCEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 74e3d39e-a7f8-409d-8153-c72b00fb36c0
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"AGENCYINSTANCEID\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0810032-1edd-4904-991d-f8f78626c38c
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: USERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 732c6ee5-73f8-4366-9246-49c7fa86c9f0
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"USERID\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1c4610a5-b0c7-4a65-8cf1-e284b2e1bf38
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ae2c6d2-b633-4c91-a77c-039695b75e03
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"AMOUNT\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb3f740a-9020-4e5c-83a7-930f1b2c7cd4
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AMOUNTSIGN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 52095bcd-9374-4d82-97c9-a1bd23286a85
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"AMOUNTSIGN\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 697cfcde-bea2-4834-be33-f40d4b08884c
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FEE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf58eaae-ac51-4392-813f-27e6186b0a41
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"FEE\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ee204bd-422f-48ca-b343-e52d86b13a29
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FEESIGN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ba76de7d-8937-4ad0-b735-92d9dcd9ddd2
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"FEESIGN\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 78ef5d42-943e-4a94-8b57-1eea69be315a
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: PARCELCATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8b168e5d-7576-4a14-92a6-e9802dbb844d
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"PARCELCATEGORY\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1d9375c-74eb-4fa0-8758-c6abd46360f4
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: FORMACIK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2b1fd3da-073e-4fa6-a2f1-601c4512eeab
+                stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+            transform: "\"o\".\"FORMACIK\""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76c1580e-63e6-4133-9803-0cbcfd25ed98
+          stepCounter: 16fd0524-3c5b-4202-9241-e344e06157d2
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SUBCATEGORYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: TRY_TO_NUMBER(REGEXP_SUBSTR("f"."VALUE", '(INV100|INV300|INV500|INV900)([^"]*)', 1, 1, 'e', 2))
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          f: f6162240-4ef1-4df9-9de1-92ab27664ab4
+          o: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: COMMONOPERATIONFEATURESVALUE
+          - locationName: SRC
+            nodeName: OPERATIONS_PARCEL
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'OPERATIONS_PARCEL') }} "o"
+            LEFT JOIN {{ ref('SRC', 'COMMONOPERATIONFEATURESVALUE') }} "f"
+            ON "o"."AGENCYDATE" = "f"."OPERATIONFEATURESVALUEDATEID"
+            AND "o"."OPERATIONID" = "f"."OPERATIONFEATURESVALUEID"
+            AND "o"."OPERATIONTYPEID" IN (51, 14, 425, 434, 437, 438)
+        name: FULL_OPERATIONS
+        noLinkRefs: []
+  name: FULL_OPERATIONS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

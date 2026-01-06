@@ -4,6 +4,8 @@ name: V_BASEAGENCYTYPE
 operation:
   config:
     insertStrategy: UNION
+    postSQL: ""
+    preSQL: ""
     selectDistinct: false
   database: ""
   deployEnabled: true
@@ -54,7 +56,7 @@ operation:
   name: V_BASEAGENCYTYPE
   overrideSQL: false
   schema: ""
-  sqlType: View
+  sqlType: Stage
   type: sql
   version: 1
 type: Node

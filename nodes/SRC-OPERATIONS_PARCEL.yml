@@ -1,0 +1,283 @@
+fileVersion: 1
+id: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+name: OPERATIONS_PARCEL
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6615a0f-0ef3-4934-b0b9-2f39e6244ea4
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: DATE
+        description: ""
+        name: AGENCYDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a7b3257e-286a-4ed5-803e-9c8d3f1f819e
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4239ee5c-e2ff-409a-966e-3615a523ce14
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: OPERATIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6b7486d3-76ef-47d7-9bcb-ea54d0e0e007
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b371dcba-56da-4fb0-81ee-dfe24b63d9fd
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: OPERATIONTYPEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac7b09a1-d0c6-4fad-93f5-06d651017487
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a082133c-1ad8-4985-a5d3-df6bb42ea952
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SERVICEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd2c2c8a-2ab9-4190-8663-1154f0a359b2
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 214b3b7a-466f-42f6-a21f-749c28a2aae9
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SERVICEPHASEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9b69fbf8-5c12-4895-937f-d20d6de010d1
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 554aed67-3c93-49dc-b06b-02c1a0396948
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PAYMENTMETHODID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7de018e1-081b-4dba-b0b2-b172e19ae5ed
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74e3d39e-a7f8-409d-8153-c72b00fb36c0
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AGENCYINSTANCEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 207a5cec-4f99-487f-a9e3-53ac0f05128a
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 732c6ee5-73f8-4366-9246-49c7fa86c9f0
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: USERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93e692bd-7037-453e-81b9-5f10ad4191c5
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ae2c6d2-b633-4c91-a77c-039695b75e03
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 482c77d0-4e05-4b21-98a3-f5bc1ca001a3
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52095bcd-9374-4d82-97c9-a1bd23286a85
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AMOUNTSIGN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f25696f-6ea4-46d6-b9d6-ee07bcce1d7e
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf58eaae-ac51-4392-813f-27e6186b0a41
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FEE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 470a5459-b53a-4acf-91ec-9a10b3af5108
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba76de7d-8937-4ad0-b735-92d9dcd9ddd2
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FEESIGN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa6ae676-86ef-4414-8a0c-53e6c816316e
+                stepCounter: 16eee978-7db0-4b07-a01f-165f3ebf6801
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b168e5d-7576-4a14-92a6-e9802dbb844d
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PARCELCATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: IFF("PARCELSPARCELOPERATION"."PARCELOPERATIONDATEID" IS NOT NULL, NVL("PARCELSPARCELOPERATION"."CATEGORY", 'B'), ' ')
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b1fd3da-073e-4fa6-a2f1-601c4512eeab
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: FORMACIK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: IFF("PARCELSPARCELOPERATION"."PARCELOPERATIONDATEID" IS NOT NULL, "PARCELSPARCELOPERATION"."PACKAGESIZE", ' ')
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ae8eae6-1a82-4c11-9f97-9bc3ce97a8a4
+          stepCounter: fc8688b3-f56f-4fce-86e4-48fba6bc73f4
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SUBCATEGORYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "NULL"
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          COMMONOPERATION: 16eee978-7db0-4b07-a01f-165f3ebf6801
+          PARCELSPARCELOPERATION: 8b965bf6-c7ca-4418-b19a-31f96e0aa6a5
+          RCTE_AGENCY: 808a7856-cdf5-433c-9464-0348343c4863
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: COMMONOPERATION
+          - locationName: SRC
+            nodeName: PARCELSPARCELOPERATION
+          - locationName: SRC
+            nodeName: RCTE_AGENCY
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'COMMONOPERATION') }} AS "COMMONOPERATION"
+            INNER JOIN {{ ref('SRC', 'RCTE_AGENCY') }} AS "RCTE_AGENCY" 
+            ON "COMMONOPERATION"."AGENCYINSTANCEID" = "RCTE_AGENCY"."AGENCYINSTANCEID"
+            LEFT JOIN {{ ref('SRC', 'PARCELSPARCELOPERATION') }} AS "PARCELSPARCELOPERATION"
+            ON "PARCELSPARCELOPERATION"."PARCELOPERATIONDATEID" = "COMMONOPERATION"."AGENCYDATE"
+            AND "PARCELSPARCELOPERATION"."PARCELOPERATIONID" = "COMMONOPERATION"."OPERATIONID"
+            WHERE "COMMONOPERATION"."AGENCYDATE" >= '2024-02-17'
+                AND "COMMONOPERATION"."AGENCYDATE" <= '2026-02-17'
+                AND "COMMONOPERATION"."OPERATIONSTATUS" = 'A'
+        name: OPERATIONS_PARCEL
+        noLinkRefs: []
+  name: OPERATIONS_PARCEL
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

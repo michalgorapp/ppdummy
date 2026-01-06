@@ -1,0 +1,498 @@
+fileVersion: 1
+id: b786b0b6-4376-4614-bf44-7977f5aa19ec
+name: FCT_FORMACIK
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8b430a5-e6a2-46e5-8713-129249676fb6
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: JO_NAZWA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e2cb00ea-6b82-47b1-9bc6-8fe6f44b1e1d
+                stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+            transform: "\"h\".\"AGENCYNAME\""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e73bf05-9bd6-4f19-94df-28602add94c1
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: JO_PNI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "\"h\".\"AGENCYPNI\""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 901689d1-a7f3-40e0-b243-7c9ee8ab880f
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: JO_TYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7c91dad-2168-482a-a159-f989259589c8
+                stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+            transform: "\"h\".\"AGENCYTYPE\""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 73bafec9-edbc-4f98-bdc3-3366861bf601
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: KATEGORIA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE
+                  WHEN "b"."SUBCATEGORYID" > 0 THEN NVL("ddu"."NAME", '')
+                  ELSE
+                      CASE
+                          WHEN "b"."PARCELCATEGORY" = 'B' THEN 'brak'
+                          WHEN "b"."PARCELCATEGORY" = 'P' THEN 'PR'
+                          WHEN "b"."PARCELCATEGORY" = 'E' THEN 'EK'
+                          ELSE "b"."PARCELCATEGORY"
+                      END
+              END
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d8d4a06-5a20-4d30-9420-7091a691b6d7
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NUMERKADROWY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5720c3bf-3085-4161-9554-ffe234cbec00
+                stepCounter: 3ed8c50f-4ca3-4cd7-9e1b-e9e65c0d8226
+            transform: "\"usr\".\"EMPLOYEENUMBER\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51f34ce2-e003-4735-8b07-f727704bccab
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FAZA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3491323b-0abe-4af3-a95d-cdf0fa955a54
+                stepCounter: 7a597375-4d4b-497a-92da-593947f0d43f
+            transform: "\"sp\".\"NAME\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7cd6acc2-6bec-46ca-88ce-124677b353ff
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: FORMACIK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a717e1e3-2fb0-4089-a28f-85e652442414
+                stepCounter: a1a7ddc8-ddfd-4e10-a08e-5a39100d7ba7
+            transform: "\"b\".\"FORMACIK\""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e206b28-81b6-481a-a326-576549bfbe0b
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: IMIENAZWISKO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "\"usr\".\"FIRSTNAME\" || ' ' || \"usr\".\"LASTNAME\""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41ae914a-8c0f-4fe1-b351-056e7fbcd7dc
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LICZBA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3481ea90-0618-4669-96f1-6386fe501c0e
+                stepCounter: a1a7ddc8-ddfd-4e10-a08e-5a39100d7ba7
+            transform: "\"b\".\"LICZBA\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c05a936-fed5-410b-8790-5f611be85872
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TYPOPERACJI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5aecbf43-08a3-43dc-a241-fb09c5141d4d
+                stepCounter: a1a7ddc8-ddfd-4e10-a08e-5a39100d7ba7
+            transform: "\"b\".\"OPERATIONTYPEID\""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb9781af-3f82-4a81-8dba-504cfafc7265
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ORDER2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: IFF("b"."GRP" = 2 AND "b"."SERVICEID2" = "b"."SERVICEID", 1, "b"."POZ")
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5297c29f-5a2e-4173-baaa-28e25555958c
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ORDER3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: NVL("b"."SUBCATEGORYID", 0)
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d7a9644-f5b0-415c-85a2-8e49b118c7d5
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RODZAJOPLATY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE
+                  WHEN "b"."GRP" = 1 THEN 'OPERACJA'
+                  WHEN "b"."GRP" = 2 THEN
+                      '' || IFF("b"."SERVICEID" = "b"."SERVICEID2",'Zasadnicza', "dod"."NAME")
+                  WHEN "b"."GRP" = 3 THEN
+                      '' || "ait"."DISPLAYNAME"
+                  ELSE NULL
+              END
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13d1802d-83bd-4926-afb9-593734a7a77b
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDER0
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d001bf89-df95-474d-9eb7-682bc4161d00
+                stepCounter: a1a7ddc8-ddfd-4e10-a08e-5a39100d7ba7
+            transform: "\"b\".\"SERVICEID\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e169d3fe-61a7-4644-a0df-2fa80e169955
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ZNAKKWOTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29dfd831-895b-49c8-a75f-01593544c63f
+                stepCounter: a1a7ddc8-ddfd-4e10-a08e-5a39100d7ba7
+            transform: "\"b\".\"SIGNAMOUNT\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94237cc2-26f5-4b3b-bcd3-de2d20e05227
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ZNAKOPLATY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7940fe97-8fac-4960-ace4-728055276909
+                stepCounter: a1a7ddc8-ddfd-4e10-a08e-5a39100d7ba7
+            transform: "\"b\".\"SIGNFEE\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dcce05d0-143f-4cca-aaa2-32aea2fdd732
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PODKATEGORIA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 516351ac-4b20-4edd-96c8-7f0cd7802d2e
+                stepCounter: 63233552-7872-48d6-b043-f4cc62c22f61
+            transform: NVL("ddi"."NAME", '')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0890a1e9-8a68-42ee-a23a-209f6a7a90a8
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: KWOTALACZNIE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 855f3e2d-9b69-497c-8d63-4fdb5f29c472
+                stepCounter: a1a7ddc8-ddfd-4e10-a08e-5a39100d7ba7
+            transform: "\"b\".\"SUMAMOUNT\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65f7848d-5de9-48aa-9613-3e943fe153de
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: OPLATALACZNIE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6edcb3a1-c0c8-4159-88cd-0b7bf5750c47
+                stepCounter: a1a7ddc8-ddfd-4e10-a08e-5a39100d7ba7
+            transform: "\"b\".\"SUMFEE\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c468d98e-0dc3-496f-936e-494561ed7d43
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TOPNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: afa44b98-4355-4e5e-a0d2-6b16c1acd4b2
+                stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+            transform: "\"h\".\"TOPNAME\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34dc8570-3819-4603-bd35-62ae7c99cfad
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TOPPNI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c1161bbd-553d-451b-aa8d-c097507cc5b4
+                stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+            transform: "\"h\".\"TOPPNI\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ee775ce-6fda-4838-8717-ecf6ed129cb7
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TOPTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 21b1c87a-63af-4bd6-b8da-480a84e01f4f
+                stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+            transform: "\"h\".\"TOPTYPE\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae4fb378-3fb8-4e76-baf9-1462d85d079c
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: UP_NAZWA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f3fb6dd6-a470-4732-b2be-37633f058b57
+                stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+            transform: NVL("h"."UPNAME", '')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f97daf23-a05a-4551-9abe-feeb2ba40634
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UP_PNI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 58ae0abb-9afe-4a57-b42e-8f20e5411f5f
+                stepCounter: 808a7856-cdf5-433c-9464-0348343c4863
+            transform: NVL("h"."UPPNI", '')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5f7d95d-b695-488b-a610-3fb4e294daf5
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: LOGIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3cf70ebd-ddf9-4233-8822-727997b0e38e
+                stepCounter: 3ed8c50f-4ca3-4cd7-9e1b-e9e65c0d8226
+            transform: "\"usr\".\"USERNAME\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0fd7729c-50b1-4d9a-87eb-9e2109f21d48
+          stepCounter: b786b0b6-4376-4614-bf44-7977f5aa19ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: USLUGA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d06473a6-15e5-4549-9077-9a9289b4b173
+                stepCounter: 07be4deb-508c-407a-8820-a15d8cc16e5e
+            transform: "\"s\".\"NAME\""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          ait: 5032ba58-3bfa-43fe-be0b-7d510d826f1e
+          b: a1a7ddc8-ddfd-4e10-a08e-5a39100d7ba7
+          ddi: 63233552-7872-48d6-b043-f4cc62c22f61
+          ddu: 63233552-7872-48d6-b043-f4cc62c22f61
+          dod: 07be4deb-508c-407a-8820-a15d8cc16e5e
+          h: 808a7856-cdf5-433c-9464-0348343c4863
+          pm: 391e2346-098c-4c9a-93b2-cfe4f416bb06
+          s: 07be4deb-508c-407a-8820-a15d8cc16e5e
+          sp: 7a597375-4d4b-497a-92da-593947f0d43f
+          usr: 3ed8c50f-4ca3-4cd7-9e1b-e9e65c0d8226
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: BASE
+          - locationName: SRC
+            nodeName: DICTIONARYAMOUNTITEMTYPE
+          - locationName: SRC
+            nodeName: DICTIONARYPAYMENTMETHOD
+          - locationName: SRC
+            nodeName: RCTE_AGENCY
+          - locationName: SRC
+            nodeName: SECURITYUSER
+          - locationName: SRC
+            nodeName: SERVICEDEFINABLEDICTIONARYITEM
+          - locationName: SRC
+            nodeName: SERVICESERVICE
+          - locationName: SRC
+            nodeName: SERVICESERVICEPHASE
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'BASE') }} AS "b"
+            INNER JOIN {{ ref('SRC', 'RCTE_AGENCY') }} AS "h"
+            ON "b"."AGENCYINSTANCEID" = "h"."AGENCYINSTANCEID"
+            INNER JOIN {{ ref('SRC', 'SECURITYUSER') }} AS "usr"
+            ON "b"."USERID" = "usr"."USERID"
+            INNER JOIN {{ ref('SRC', 'SERVICESERVICE') }} AS "s"
+            ON "b"."SERVICEID" = "s"."SERVICEID"
+            INNER JOIN {{ ref('SRC', 'SERVICESERVICEPHASE') }} AS "sp"
+            ON "b"."SERVICEPHASEID" = "sp"."SERVICEPHASEID"
+            INNER JOIN {{ ref('SRC', 'DICTIONARYPAYMENTMETHOD') }} AS "pm"
+            ON "b"."PAYMENTMETHODID" = "pm"."PAYMENTMETHODID"
+            LEFT JOIN {{ ref('SRC', 'DICTIONARYAMOUNTITEMTYPE') }} AS "ait"
+            ON "b"."AMOUNTITEMTYPEID3" = "ait"."AMOUNTITEMTYPEID"
+            LEFT JOIN {{ ref('SRC', 'SERVICESERVICE') }} AS "dod"
+            ON "b"."SERVICEID" = "dod"."SERVICEID"
+            LEFT JOIN {{ ref('SRC', 'SERVICEDEFINABLEDICTIONARYITEM') }} AS "ddi"
+            ON "b"."SUBCATEGORYID" = "ddi"."DEFINABLEDICTIONARYITEMID"
+            LEFT JOIN {{ ref('SRC', 'SERVICEDEFINABLEDICTIONARYITEM') }} AS "ddu"
+            ON "ddi"."PARENTDEFINABLEDICTIONARYITEMID" = "ddu"."DEFINABLEDICTIONARYITEMID"
+        name: FCT_FORMACIK
+        noLinkRefs: []
+  name: FCT_FORMACIK
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node
